@@ -29,6 +29,20 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   /**************************************************************************** */
  
+app.get("/filteredimage/",async (req, res)=>{
+    let {image_url}: any = req.query;
+    if( !image_url ) {
+      return res.status(422)
+                .send(`Image cannot be processed.`);
+    }
+      else{
+        filterImageFromURL(image_url).then((result)=>{
+        res.sendFile(result);
+        res.on(`done`,()=>deleteLocalFiles([result]));
+        }).catch((err)=>res.status(422).send(err))
+      }
+  } );
+
   
   //! END @TODO1
   
