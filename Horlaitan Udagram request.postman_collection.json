@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "39906b43-2839-4126-94c4-a08107bd6afb",
+		"name": "Horlaitan Udagram request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/filteredimage?image_url=https://i0.wp.com/codingsolutions.tech/wp-content/uploads/2022/07/20220707_223655_0000.png?fit=1024%2C1024%26ssl=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://i0.wp.com/codingsolutions.tech/wp-content/uploads/2022/07/20220707_223655_0000.png?fit=1024%2C1024&ssl=1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
