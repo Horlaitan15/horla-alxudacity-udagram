@@ -1,0 +1,17 @@
+{
+	"info": {
+		"_postman_id": "39906b43-2839-4126-94c4-a08107bd6afb",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Image filter",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
